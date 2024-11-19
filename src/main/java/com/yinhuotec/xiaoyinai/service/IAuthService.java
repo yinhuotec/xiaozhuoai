@@ -1,5 +1,7 @@
 package com.yinhuotec.xiaoyinai.service;
 
+import com.yinhuotec.xiaoyinai.common.R;
+
 /**
  * @author xpf
  * @version 1.0
@@ -11,6 +13,9 @@ public interface IAuthService {
       登录
       @description 手机验证码登录
      * */
+    R<String> login();
+
+
 
     /**
      * 注销
