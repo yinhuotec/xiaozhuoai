@@ -1,4 +1,4 @@
-package com.yinhuotec.xiaoyinai.dto.req;
+package com.yinhuotec.xiaozhuoai.dto.req;
 
 import lombok.Data;
 
@@ -9,7 +9,7 @@ import lombok.Data;
  * @since 2024-10-17 16:08:49
  */
 @Data
-public class MessageReq {
+public class Message {
     private String role;
     private String content;
 }

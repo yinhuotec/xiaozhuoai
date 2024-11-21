@@ -1,9 +1,9 @@
-package com.yinhuotec.xiaoyinai.service.Impl;
+package com.yinhuotec.xiaozhuoai.service.Impl;
 
-import com.yinhuotec.xiaoyinai.common.R;
-import com.yinhuotec.xiaoyinai.dto.req.JsonDataReq;
-import com.yinhuotec.xiaoyinai.dto.req.MessageReq;
-import com.yinhuotec.xiaoyinai.service.IChatService;
+import com.yinhuotec.xiaozhuoai.common.R;
+import com.yinhuotec.xiaozhuoai.dto.req.JsonData;
+import com.yinhuotec.xiaozhuoai.dto.req.Message;
+import com.yinhuotec.xiaozhuoai.service.IChatService;
 import org.json.JSONObject;
 
 import org.springframework.stereotype.Service;
@@ -33,16 +33,16 @@ public class ChatServiceImpl implements IChatService {
     @Override
     public R<String> chat(String text) throws IOException {
         //将JsonData、Message对象转换成
-        MessageReq messageReq = new MessageReq();
-        messageReq.setRole("user");
-        messageReq.setContent(text);
-        List<MessageReq> messageReqs = new ArrayList<>();
-        messageReqs.add(messageReq);
-        JsonDataReq jsonData = new JsonDataReq();
+        Message message = new Message();
+        message.setRole("user");
+        message.setContent(text);
+        List<Message> messages = new ArrayList<>();
+        messages.add(message);
+        JsonData jsonData = new JsonData();
         //jsonData设置参数
         jsonData.setModel("glm-4-flash");
-        jsonData.setMessageReqs(messageReqs);
-//        jsonData.setStream("True");
+        jsonData.setMessages(messages);
+        jsonData.setStream("False");
 
         JSONObject jsonObject = new JSONObject(jsonData);
         String jsonString = jsonObject.toString();

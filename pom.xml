@@ -14,6 +14,13 @@
         <spring-boot.version>2.3.12.RELEASE</spring-boot.version>
     </properties>
     <dependencies>
+        <!--腾讯云短信验证码依赖-->
+        <dependency>
+            <groupId>com.tencentcloudapi</groupId>
+            <artifactId>tencentcloud-sdk-java</artifactId>
+            <version>3.1.1000</version>
+        </dependency>
+        <!--jwt依赖-->
         <!--智谱大模型依赖-->
         <dependency>
             <groupId>cn.bigmodel.openapi</groupId>
@@ -129,7 +136,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.yinhuotec.xiaoyinai.XiaozhuoAiBeApplication</mainClass>
+                    <mainClass>com.yinhuotec.xiaozhuoai.XiaozhuoAiBeApplication</mainClass>
 <!--                    <skip>true</skip>-->
                 </configuration>
                 <executions>

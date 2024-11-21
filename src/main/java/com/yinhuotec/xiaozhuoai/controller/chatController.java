@@ -1,7 +1,7 @@
-package com.yinhuotec.xiaoyinai.controller;
+package com.yinhuotec.xiaozhuoai.controller;
 
-import com.yinhuotec.xiaoyinai.common.R;
-import com.yinhuotec.xiaoyinai.service.IChatService;
+import com.yinhuotec.xiaozhuoai.common.R;
+import com.yinhuotec.xiaozhuoai.service.IChatService;
 import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import java.io.IOException;
@@ -19,8 +19,7 @@ public class chatController {
   @Resource
   private IChatService zhipuService;
   @RequestMapping()
-  public R<String> autoAnswer(@RequestBody String text) throws IOException {
-       System.out.println(text);
+  public R<String> autoAnswer(@RequestBody() String text) throws IOException {
        return zhipuService.chat(text);
   }
 }

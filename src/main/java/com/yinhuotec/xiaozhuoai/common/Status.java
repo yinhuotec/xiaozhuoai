@@ -1,4 +1,4 @@
-package com.yinhuotec.xiaoyinai.common;
+package com.yinhuotec.xiaozhuoai.common;
 
 /**
  * 系统状态码

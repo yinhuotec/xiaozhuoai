@@ -1,4 +1,4 @@
-package com.yinhuotec.xiaoyinai.dto.req;
+package com.yinhuotec.xiaozhuoai.dto.req;
 
 import lombok.Data;
 import java.util.List;
@@ -10,9 +10,10 @@ import java.util.List;
  * @since 2024-10-17 15:47:10
  */
 @Data
-public class JsonDataReq {
+public class JsonData {
     private String model;
-    private List<MessageReq> messageReqs;
+    private List<Message> messages;
+    private String stream;
 }
 
 
