@@ -32,6 +32,7 @@ public class AuthServiceImpl implements IAuthService {
     public R<String> sendCode(String phoneNumber) {
         try {
             System.out.println(111);
+            System.out.println(222);
              Credential cred = new Credential("SecretId", "SecretKey");
 
 
