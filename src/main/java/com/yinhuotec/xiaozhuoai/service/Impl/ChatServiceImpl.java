@@ -33,16 +33,16 @@ public class ChatServiceImpl implements IChatService {
     @Override
     public R<String> chat(String text) throws IOException {
         //将JsonData、Message对象转换成
-        Message message = new Message();
-        message.setRole("user");
-        message.setContent(text);
-        List<Message> messages = new ArrayList<>();
-        messages.add(message);
+        Message messageReq = new Message();
+        messageReq.setRole("user");
+        messageReq.setContent(text);
+        List<Message> messageReqs = new ArrayList<>();
+        messageReqs.add(messageReq);
         JsonData jsonData = new JsonData();
         //jsonData设置参数
         jsonData.setModel("glm-4-flash");
-        jsonData.setMessages(messages);
-        jsonData.setStream("False");
+        jsonData.setMessages(messageReqs);
+//        jsonData.setStream("True");
 
         JSONObject jsonObject = new JSONObject(jsonData);
         String jsonString = jsonObject.toString();
