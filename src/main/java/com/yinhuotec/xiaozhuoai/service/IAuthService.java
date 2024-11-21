@@ -1,6 +1,6 @@
-package com.yinhuotec.xiaoyinai.service;
+package com.yinhuotec.xiaozhuoai.service;
 
-import com.yinhuotec.xiaoyinai.common.R;
+import com.yinhuotec.xiaozhuoai.common.R;
 
 /**
  * @author xpf

@@ -129,7 +129,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>com.yinhuotec.xiaoyinai.XiaozhuoAiBeApplication</mainClass>
+                    <mainClass>com.yinhuotec.xiaozhuoai.XiaozhuoAiBeApplication</mainClass>
 <!--                    <skip>true</skip>-->
                 </configuration>
                 <executions>

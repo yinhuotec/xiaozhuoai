@@ -1,4 +1,4 @@
-package com.yinhuotec.xiaoyinai.dto.req;
+package com.yinhuotec.xiaozhuoai.dto.req;
 
 import lombok.Data;
 

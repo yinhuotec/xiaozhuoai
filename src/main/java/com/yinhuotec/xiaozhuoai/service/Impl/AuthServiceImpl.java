@@ -1,6 +1,6 @@
-package com.yinhuotec.xiaoyinai.service.Impl;
+package com.yinhuotec.xiaozhuoai.service.Impl;
 
-import com.yinhuotec.xiaoyinai.service.IAuthService;
+import com.yinhuotec.xiaozhuoai.service.IAuthService;
 
 /**
  * @author xpf

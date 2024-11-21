@@ -1,4 +1,4 @@
-package com.yinhuotec.xiaoyinai;
+package com.yinhuotec.xiaozhuoai;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.yinhuotec.xiaoyinai.entity;
+package com.yinhuotec.xiaozhuoai.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;

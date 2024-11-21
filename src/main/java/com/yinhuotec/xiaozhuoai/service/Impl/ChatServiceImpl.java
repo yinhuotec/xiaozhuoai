@@ -1,9 +1,9 @@
-package com.yinhuotec.xiaoyinai.service.Impl;
+package com.yinhuotec.xiaozhuoai.service.Impl;
 
-import com.yinhuotec.xiaoyinai.common.R;
-import com.yinhuotec.xiaoyinai.dto.req.JsonDataReq;
-import com.yinhuotec.xiaoyinai.dto.req.MessageReq;
-import com.yinhuotec.xiaoyinai.service.IChatService;
+import com.yinhuotec.xiaozhuoai.common.R;
+import com.yinhuotec.xiaozhuoai.dto.req.JsonDataReq;
+import com.yinhuotec.xiaozhuoai.dto.req.MessageReq;
+import com.yinhuotec.xiaozhuoai.service.IChatService;
 import org.json.JSONObject;
 
 import org.springframework.stereotype.Service;

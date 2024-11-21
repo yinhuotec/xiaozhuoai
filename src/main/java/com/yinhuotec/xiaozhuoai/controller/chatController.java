@@ -1,7 +1,7 @@
-package com.yinhuotec.xiaoyinai.controller;
+package com.yinhuotec.xiaozhuoai.controller;
 
-import com.yinhuotec.xiaoyinai.common.R;
-import com.yinhuotec.xiaoyinai.service.IChatService;
+import com.yinhuotec.xiaozhuoai.common.R;
+import com.yinhuotec.xiaozhuoai.service.IChatService;
 import org.springframework.web.bind.annotation.*;
 import javax.annotation.Resource;
 import java.io.IOException;
